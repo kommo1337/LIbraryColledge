@@ -1,0 +1,102 @@
+﻿<Page x:Class="Uhanov.PageFolder.StaffPageFolder.CardReaderPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Uhanov.PageFolder.StaffPageFolder"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Список карточек читателей-пидоров">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Label Content="Поиск"
+               Style="{DynamicResource NormalLabel}"/>
+        <TextBox x:Name="SearchTB"
+                 Grid.Column="1"
+                 Width="Auto"
+                 TextChanged="SearchTb_TextChanged"/>
+        <ListBox Grid.Row="1"
+                 Grid.ColumnSpan="2"
+                 x:Name="ListReaderLB"
+                 SelectionMode="Multiple">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="70"/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Image Grid.RowSpan="4" Source="{Binding PhotoReader}"/>
+                        <TextBlock Grid.Column="1"
+                            Style="{DynamicResource StyleTextBlock}">
+                            <Run Text="Фамилия" FontWeight="Bold"/>
+                            <Run Text="{Binding LastNameReader}"/>
+                        </TextBlock>
+                        <TextBlock Grid.Row="1" Grid.Column="1"
+                            Style="{DynamicResource StyleTextBlock}">
+                            <Run Text="Имя" FontWeight="Bold"/>
+                            <Run Text="{Binding FirstNameReader}"/>
+                        </TextBlock>
+                        <TextBlock Grid.Row="2" Grid.Column="1"
+                            Style="{DynamicResource StyleTextBlock}">
+                            <Run Text="Отчество" FontWeight="Bold"/>
+                            <Run Text="{Binding MiddleNameReader}"/>
+                        </TextBlock>
+                        <TextBlock Grid.Row="3" Grid.Column="1"
+                            Style="{DynamicResource StyleTextBlock}">
+                            <Run Text="Номер телефона" FontWeight="Bold"/>
+                            <Run Text="{Binding NumberPhoneReader}"/>
+                        </TextBlock>
+                        <TextBlock Grid.Column="2"
+                            Style="{DynamicResource StyleTextBlock}">
+                            <Run Text="Домашний номер" FontWeight="Bold"/>
+                            <Run Text="{Binding HomePhoneReader}"/>
+                        </TextBlock>
+                        <TextBlock Grid.Row="1" Grid.Column="2"
+                            Style="{DynamicResource StyleTextBlock}">
+                            <Run Text="Дата рождения" FontWeight="Bold"/>
+                            <Run Text="{Binding DateOfBirthReader,
+                                StringFormat=dd.MM.yyyy}"/>
+                        </TextBlock>
+
+                        <TextBlock Grid.Row="2" Grid.Column="2"
+                            Style="{DynamicResource StyleTextBlock}">
+                            <Run Text="Уникальный номер" FontWeight="Bold"/>
+                            <Run Text="{Binding UniqueNumberReaderCard}"/>
+                        </TextBlock>
+
+                        <TextBlock Grid.Row="3" Grid.Column="2"
+                                   Style="{DynamicResource StyleTextBlock}">
+                            <TextBlock.Text>
+                                <MultiBinding 
+                                    StringFormat="{} Регион: {0}, Город: {1}, Улица: {2}, Дом: {3}, Корпус: {4}, Квартира: {5}">
+                                    <Binding Path="Address.Region.NameRegion"/>
+                                    <Binding Path="Address.City.NameCity"/>
+                                    <Binding Path="Address.Street.NameStreet"/>
+                                    <Binding Path="Address.House"/>
+                                    <Binding Path="Address.Housing"/>
+                                    <Binding Path="Address.Flat"/>
+                                </MultiBinding>
+                            </TextBlock.Text>
+                        </TextBlock>
+                    </Grid>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </Grid>
+</Page>
