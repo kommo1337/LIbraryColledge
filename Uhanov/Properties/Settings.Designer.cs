@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Uhanov.Properties
+namespace LibraryBook.Properties
 {
 
 

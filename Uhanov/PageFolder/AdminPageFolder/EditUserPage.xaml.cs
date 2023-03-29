@@ -12,10 +12,10 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using Uhanov.ClassFolder;
-using Uhanov.DataFolder;
+using LibraryBook.ClassFolder;
+using LibraryBook.DataFolder;
 
-namespace Uhanov.PageFolder.AdminPageFolder
+namespace LibraryBook.PageFolder.AdminPageFolder
 {
     /// <summary>
     /// Логика взаимодействия для EditUserPage.xaml

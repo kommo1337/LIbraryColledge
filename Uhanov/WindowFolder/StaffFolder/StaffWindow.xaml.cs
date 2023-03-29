@@ -11,9 +11,9 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-using Uhanov.ClassFolder;
+using LibraryBook.ClassFolder;
 
-namespace Uhanov.WindowFolder.StaffFolder
+namespace LibraryBook.WindowFolder.StaffFolder
 {
     /// <summary>
     /// Логика взаимодействия для StaffWindow.xaml

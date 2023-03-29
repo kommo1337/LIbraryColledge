@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Uhanov.PageFolder.StaffPageFolder
+namespace LibraryBook.PageFolder.StaffPageFolder
 {
     /// <summary>
     /// Логика взаимодействия для ExemplarBookPage.xaml

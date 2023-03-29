@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Data.Entity.Validation;
 using System.IO;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -15,12 +16,12 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using Uhanov.ClassFolder;
-using Uhanov.DataFolder;
-using Uhanov.WindowFolder;
-using Uhanov.WindowFolder.StaffFolder;
+using LibraryBook.ClassFolder;
+using LibraryBook.DataFolder;
+using LibraryBook.WindowFolder;
+using LibraryBook.WindowFolder.StaffFolder;
 
-namespace Uhanov.PageFolder.StaffPageFolder
+namespace LibraryBook.PageFolder.StaffPageFolder
 {
     /// <summary>
     /// Логика взаимодействия для AddReaderPage.xaml
@@ -39,14 +40,16 @@ namespace Uhanov.PageFolder.StaffPageFolder
 
         private void AddressAdd()
         {
+            
             var addressAdd = new Adress()
             {
-                IdRegion = Int32.Parse(RegionCB.SelectedItem.ToString()),
-                IdCity = Int32.Parse(CityCB.SelectedItem.ToString()),
-                IdStreet = Int32.Parse(StreetCB.SelectedItem.ToString()),
+                IdRegion = Int32.Parse(RegionCB.SelectedValue.ToString()),
+                IdCity = Int32.Parse(CityCB.SelectedValue.ToString()),
+                IdStreet = Int32.Parse(StreetCB.SelectedValue.ToString()),
                 HouseAdress = Int32.Parse(HouseTb.Text),
                 BuildingHouse = HousingTb.Text,
-                AppartmentHouse = Int32.Parse(FlatTb.Text),
+                IndexAdress = 1,
+                AppartmentHouse = Int32.Parse(FlatTb.Text)
             };
             DBEntities.GetContext().Adress.Add(addressAdd);
             DBEntities.GetContext().SaveChanges();

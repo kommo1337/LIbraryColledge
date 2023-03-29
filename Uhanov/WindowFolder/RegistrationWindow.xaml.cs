@@ -11,10 +11,10 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-using Uhanov.ClassFolder;
-using Uhanov.DataFolder;
+using LibraryBook.ClassFolder;
+using LibraryBook.DataFolder;
 
-namespace Uhanov.WindowFolder
+namespace LibraryBook.WindowFolder
 {
     /// <summary>
     /// Логика взаимодействия для RegistrationWindow.xaml

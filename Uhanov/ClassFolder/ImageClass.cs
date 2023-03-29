@@ -9,7 +9,7 @@ using System.IO;
 using System.Windows.Media.Imaging;
 
 
-namespace Uhanov.ClassFolder
+namespace LibraryBook.ClassFolder
 {
     class ImageClass
     {

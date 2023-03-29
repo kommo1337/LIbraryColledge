@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Uhanov.DataFolder
+namespace LibraryBook.DataFolder
 {
     using System;
     using System.Data.Entity;

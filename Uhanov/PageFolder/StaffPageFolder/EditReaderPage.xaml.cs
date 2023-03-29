@@ -14,12 +14,12 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using Uhanov.ClassFolder;
-using Uhanov.DataFolder;
-using Uhanov.WindowFolder;
-using Uhanov.WindowFolder.StaffFolder;
+using LibraryBook.ClassFolder;
+using LibraryBook.DataFolder;
+using LibraryBook.WindowFolder;
+using LibraryBook.WindowFolder.StaffFolder;
 
-namespace Uhanov.PageFolder.StaffPageFolder
+namespace LibraryBook.PageFolder.StaffPageFolder
 {
     /// <summary>
     /// Логика взаимодействия для EditReaderPage.xaml

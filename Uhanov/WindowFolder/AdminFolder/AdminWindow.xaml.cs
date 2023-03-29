@@ -11,9 +11,9 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-using Uhanov.ClassFolder;
+using LibraryBook.ClassFolder;
 
-namespace Uhanov.WindowFolder.AdminFolder
+namespace LibraryBook.WindowFolder.AdminFolder
 {
     /// <summary>
     /// Логика взаимодействия для AdminWindow.xaml

@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище DBModelContainer" CdmEntityContainer="DBEntities">
+    <EntitySetMapping Name="Adress">
+      <EntityTypeMapping TypeName="DBModel.Adress">
+        <MappingFragment StoreEntitySet="Adress">
+          <ScalarProperty Name="IdAdress" ColumnName="IdAdress" />
+          <ScalarProperty Name="IndexAdress" ColumnName="IndexAdress" />
+          <ScalarProperty Name="IdRegion" ColumnName="IdRegion" />
+          <ScalarProperty Name="IdCity" ColumnName="IdCity" />
+          <ScalarProperty Name="IdStreet" ColumnName="IdStreet" />
+          <ScalarProperty Name="HouseAdress" ColumnName="HouseAdress" />
+          <ScalarProperty Name="BuildingHouse" ColumnName="BuildingHouse" />
+          <ScalarProperty Name="AppartmentHouse" ColumnName="AppartmentHouse" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AreaOfKnowledge">
+      <EntityTypeMapping TypeName="DBModel.AreaOfKnowledge">
+        <MappingFragment StoreEntitySet="AreaOfKnowledge">
+          <ScalarProperty Name="IdAreaOfKnowledge" ColumnName="IdAreaOfKnowledge" />
+          <ScalarProperty Name="NumberAreaOfKnowledge" ColumnName="NumberAreaOfKnowledge" />
+          <ScalarProperty Name="NameAreaOfKnowledge" ColumnName="NameAreaOfKnowledge" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Author">
+      <EntityTypeMapping TypeName="DBModel.Author">
+        <MappingFragment StoreEntitySet="Author">
+          <ScalarProperty Name="IdAuthor" ColumnName="IdAuthor" />
+          <ScalarProperty Name="LastNameAuthor" ColumnName="LastNameAuthor" />
+          <ScalarProperty Name="FirstNameAuthor" ColumnName="FirstNameAuthor" />
+          <ScalarProperty Name="Patronymic" ColumnName="Patronymic" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Book">
+      <EntityTypeMapping TypeName="DBModel.Book">
+        <MappingFragment StoreEntitySet="Book">
+          <ScalarProperty Name="IdBook" ColumnName="IdBook" />
+          <ScalarProperty Name="NameBook" ColumnName="NameBook" />
+          <ScalarProperty Name="IdBookAuthor" ColumnName="IdBookAuthor" />
+          <ScalarProperty Name="IdCity" ColumnName="IdCity" />
+          <ScalarProperty Name="IdPublishingHouse" ColumnName="IdPublishingHouse" />
+          <ScalarProperty Name="DateOfPublishing" ColumnName="DateOfPublishing" />
+          <ScalarProperty Name="AmountOfPages" ColumnName="AmountOfPages" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="CountInstance" ColumnName="CountInstance" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BookAreaOfKnowledge">
+      <EntityTypeMapping TypeName="DBModel.BookAreaOfKnowledge">
+        <MappingFragment StoreEntitySet="BookAreaOfKnowledge">
+          <ScalarProperty Name="IdBookAreaOfKnowledge" ColumnName="IdBookAreaOfKnowledge" />
+          <ScalarProperty Name="IdBook" ColumnName="IdBook" />
+          <ScalarProperty Name="IdAreaOfKnowledge" ColumnName="IdAreaOfKnowledge" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BookAuthor">
+      <EntityTypeMapping TypeName="DBModel.BookAuthor">
+        <MappingFragment StoreEntitySet="BookAuthor">
+          <ScalarProperty Name="IdBookAuthor" ColumnName="IdBookAuthor" />
+          <ScalarProperty Name="IdBook" ColumnName="IdBook" />
+          <ScalarProperty Name="IdAuthor" ColumnName="IdAuthor" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="City">
+      <EntityTypeMapping TypeName="DBModel.City">
+        <MappingFragment StoreEntitySet="City">
+          <ScalarProperty Name="IdCity" ColumnName="IdCity" />
+          <ScalarProperty Name="NameCity" ColumnName="NameCity" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Instance">
+      <EntityTypeMapping TypeName="DBModel.Instance">
+        <MappingFragment StoreEntitySet="Instance">
+          <ScalarProperty Name="IdInstance" ColumnName="IdInstance" />
+          <ScalarProperty Name="IdBookAuthor" ColumnName="IdBookAuthor" />
+          <ScalarProperty Name="UniqueChipher" ColumnName="UniqueChipher" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PublishingHouse">
+      <EntityTypeMapping TypeName="DBModel.PublishingHouse">
+        <MappingFragment StoreEntitySet="PublishingHouse">
+          <ScalarProperty Name="IdPublishingHouse" ColumnName="IdPublishingHouse" />
+          <ScalarProperty Name="NamePublisherHouse" ColumnName="NamePublisherHouse" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Reader">
+      <EntityTypeMapping TypeName="DBModel.Reader">
+        <MappingFragment StoreEntitySet="Reader">
+          <ScalarProperty Name="IdReader" ColumnName="IdReader" />
+          <ScalarProperty Name="UniqueNumberReaderCard" ColumnName="UniqueNumberReaderCard" />
+          <ScalarProperty Name="LastNameReader" ColumnName="LastNameReader" />
+          <ScalarProperty Name="FirstNameReader" ColumnName="FirstNameReader" />
+          <ScalarProperty Name="MiddleNameReader" ColumnName="MiddleNameReader" />
+          <ScalarProperty Name="IdAdderss" ColumnName="IdAdderss" />
+          <ScalarProperty Name="NumberPhoneReader" ColumnName="NumberPhoneReader" />
+          <ScalarProperty Name="HomePhoneReader" ColumnName="HomePhoneReader" />
+          <ScalarProperty Name="DateOfBirthReader" ColumnName="DateOfBirthReader" />
+          <ScalarProperty Name="PhotoReader" ColumnName="PhotoReader" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Region">
+      <EntityTypeMapping TypeName="DBModel.Region">
+        <MappingFragment StoreEntitySet="Region">
+          <ScalarProperty Name="IdRegion" ColumnName="IdRegion" />
+          <ScalarProperty Name="NameRegion" ColumnName="NameRegion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Role">
+      <EntityTypeMapping TypeName="DBModel.Role">
+        <MappingFragment StoreEntitySet="Role">
+          <ScalarProperty Name="IdRole" ColumnName="IdRole" />
+          <ScalarProperty Name="NameRole" ColumnName="NameRole" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Street">
+      <EntityTypeMapping TypeName="DBModel.Street">
+        <MappingFragment StoreEntitySet="Street">
+          <ScalarProperty Name="IdStreet" ColumnName="IdStreet" />
+          <ScalarProperty Name="NameStreet" ColumnName="NameStreet" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UsageBooks">
+      <EntityTypeMapping TypeName="DBModel.UsageBooks">
+        <MappingFragment StoreEntitySet="UsageBooks">
+          <ScalarProperty Name="IdUsageBooksId" ColumnName="IdUsageBooksId" />
+          <ScalarProperty Name="IdReader" ColumnName="IdReader" />
+          <ScalarProperty Name="DateOfIssue" ColumnName="DateOfIssue" />
+          <ScalarProperty Name="DateOfDue" ColumnName="DateOfDue" />
+          <ScalarProperty Name="IdInstance" ColumnName="IdInstance" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="User">
+      <EntityTypeMapping TypeName="DBModel.User">
+        <MappingFragment StoreEntitySet="User">
+          <ScalarProperty Name="IdUser" ColumnName="IdUser" />
+          <ScalarProperty Name="Login" ColumnName="Login" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="IdRole" ColumnName="IdRole" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,9 +1,9 @@
-﻿<Page x:Class="Uhanov.PageFolder.StaffPageFolder.CardReaderPage"
+﻿<Page x:Class="LibraryBook.PageFolder.StaffPageFolder.CardReaderPage"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-      xmlns:local="clr-namespace:Uhanov.PageFolder.StaffPageFolder"
+      xmlns:local="clr-namespace:LibraryBook.PageFolder.StaffPageFolder"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Список карточек читателей-пидоров">
@@ -22,7 +22,7 @@
         <TextBox x:Name="SearchTB"
                  Grid.Column="1"
                  Width="Auto"
-                 TextChanged="SearchTb_TextChanged"/>
+                 TextChanged="SearchTB_TextChanged"/>
         <ListBox Grid.Row="1"
                  Grid.ColumnSpan="2"
                  x:Name="ListReaderLB"

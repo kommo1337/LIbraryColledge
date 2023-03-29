@@ -12,8 +12,10 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using LibraryBook.ClassFolder;
+using LibraryBook.DataFolder;
 
-namespace Uhanov.PageFolder.StaffPageFolder
+namespace LibraryBook.PageFolder.StaffPageFolder
 {
     /// <summary>
     /// Логика взаимодействия для CardReaderPage.xaml
@@ -23,6 +25,19 @@ namespace Uhanov.PageFolder.StaffPageFolder
         public CardReaderPage()
         {
             InitializeComponent();
+        }
+
+        private void SearchTB_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            try
+            {
+                ListReaderLB.ItemsSource = DBEntities.GetContext().Book.Where
+                (u => u.NameBook.StartsWith(SearchTB.Text)).ToList();
+            }
+            catch (Exception ex)
+            {
+                MBClass.ErrorMB(ex);
+            }
         }
     }
 }

@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace Uhanov.ClassFolder
+namespace LibraryBook.ClassFolder
 {
     internal class MBClass
     {
