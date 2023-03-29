@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using LibraryBook.ClassFolder;
+using LibraryBook.PageFolder.StaffPageFolder;
+using Uhanov.PageFolder.StaffPageFolder;
 
 namespace LibraryBook.WindowFolder.StaffFolder
 {
@@ -39,6 +41,16 @@ namespace LibraryBook.WindowFolder.StaffFolder
         private void ExitBtn_Click(object sender, RoutedEventArgs e)
         {
             MBClass.ExitMB();
+        }
+
+        private void AddCardReader_Click(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Navigate(new CardReaderPage());
+        }
+
+        private void ListCardReader_Click(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Navigate(new AddCardReaderPage());
         }
     }
 }

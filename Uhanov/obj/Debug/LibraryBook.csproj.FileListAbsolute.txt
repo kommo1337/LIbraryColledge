@@ -48,3 +48,5 @@ C:\Users\kommo\Desktop\Uhanov-master\Uhanov\obj\Debug\LibraryBook.csproj.CoreCom
 C:\Users\kommo\Desktop\Uhanov-master\Uhanov\obj\Debug\LibraryBook.csproj.CopyComplete
 C:\Users\kommo\Desktop\Uhanov-master\Uhanov\obj\Debug\Uhanov.exe
 C:\Users\kommo\Desktop\Uhanov-master\Uhanov\obj\Debug\Uhanov.pdb
+C:\Users\kommo\Desktop\Uhanov-master\Uhanov\obj\Debug\PageFolder\StaffPageFolder\AddCardReaderPage.g.cs
+C:\Users\kommo\Desktop\Uhanov-master\Uhanov\obj\Debug\PageFolder\StaffPageFolder\AddCardReaderPage.baml

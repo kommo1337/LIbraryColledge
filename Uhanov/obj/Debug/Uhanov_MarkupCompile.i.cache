@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\kommo\Desktop\Uhanov-master\Uhanov\App.xaml
-14-293035943
+15-439962248
 2-40832093
-41387486651
+42-615587452
 19-366240318
-PageFolder\AdminPageFolder\AddUserPage.xaml;PageFolder\AdminPageFolder\EditUserPage.xaml;PageFolder\AdminPageFolder\UserListPage.xaml;PageFolder\StaffPageFolder\AddReaderPage.xaml;PageFolder\StaffPageFolder\CardReaderPage.xaml;PageFolder\StaffPageFolder\EditReaderPage.xaml;PageFolder\StaffPageFolder\ExemplarBookPage.xaml;PageFolder\StaffPageFolder\ListBookPage.xaml;PageFolder\StaffPageFolder\ListReaderPage.xaml;ResourceFolder\Dictionary.xaml;WindowFolder\AdminFolder\AdminWindow.xaml;WindowFolder\AuthorizationWindow.xaml;WindowFolder\RegistrationWindow.xaml;WindowFolder\StaffFolder\StaffWindow.xaml;
+PageFolder\AdminPageFolder\AddUserPage.xaml;PageFolder\AdminPageFolder\EditUserPage.xaml;PageFolder\AdminPageFolder\UserListPage.xaml;PageFolder\StaffPageFolder\AddCardReaderPage.xaml;PageFolder\StaffPageFolder\AddReaderPage.xaml;PageFolder\StaffPageFolder\CardReaderPage.xaml;PageFolder\StaffPageFolder\EditReaderPage.xaml;PageFolder\StaffPageFolder\ExemplarBookPage.xaml;PageFolder\StaffPageFolder\ListBookPage.xaml;PageFolder\StaffPageFolder\ListReaderPage.xaml;ResourceFolder\Dictionary.xaml;WindowFolder\AdminFolder\AdminWindow.xaml;WindowFolder\AuthorizationWindow.xaml;WindowFolder\RegistrationWindow.xaml;WindowFolder\StaffFolder\StaffWindow.xaml;
 
-False
+True
 

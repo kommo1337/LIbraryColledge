@@ -23,7 +23,7 @@
                     <RowDefinition/>
                 </Grid.RowDefinitions>
                 <Image
-                        Source="/Uhanov;component/ResourceFolder/Logo.png"/>
+                       />
                 <StackPanel Grid.Row="1">
                     <Button x:Name="ListReader" 
                                 HorizontalAlignment="Left"
@@ -38,6 +38,20 @@
                                 Click="AddReader_Click" Margin="10,10,0,10" Width="270">
                         <StackPanel Orientation="Horizontal" Width="160">
                             <TextBlock Text="Добавить читателя" Style="{DynamicResource ButtonTextBlock}"/>
+                        </StackPanel>
+                    </Button>
+                    <Button x:Name="AddCardReader" 
+                                HorizontalAlignment="Left"
+                                Click="AddCardReader_Click" Margin="10,10,0,10" Width="270">
+                        <StackPanel Orientation="Horizontal" Width="160">
+                            <TextBlock Text="Список карточек" Style="{DynamicResource ButtonTextBlock}"/>
+                        </StackPanel>
+                    </Button>
+                    <Button x:Name="ListCardReader" 
+                                HorizontalAlignment="Left"
+                                Click="ListCardReader_Click" Margin="10,10,0,10" Width="270">
+                        <StackPanel Orientation="Horizontal" Width="160">
+                            <TextBlock Text="Добавить карточек" Style="{DynamicResource ButtonTextBlock}"/>
                         </StackPanel>
                     </Button>
                 </StackPanel>

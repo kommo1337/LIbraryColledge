@@ -143,6 +143,9 @@
     <Compile Include="PageFolder\AdminPageFolder\UserListPage.xaml.cs">
       <DependentUpon>UserListPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="PageFolder\StaffPageFolder\AddCardReaderPage.xaml.cs">
+      <DependentUpon>AddCardReaderPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="PageFolder\StaffPageFolder\AddReaderPage.xaml.cs">
       <DependentUpon>AddReaderPage.xaml</DependentUpon>
     </Compile>
@@ -182,6 +185,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="PageFolder\AdminPageFolder\UserListPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PageFolder\StaffPageFolder\AddCardReaderPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
